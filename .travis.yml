@@ -3,6 +3,13 @@ compiler:
   - gcc
 before_script:
   - sudo apt-get install gcc-avr avr-libc libelf-dev pkg-config freeglut3 freeglut3-dev scons
-  - wget -O "arduino.tar.gz" "http://arduino.googlecode.com/files/arduino-1.0.5-linux64.tgz"
-  - tar xzf arduino.tar.gz
-script: scons ARDUINO_BOARD=uno ARDUINO_HOME="$(pwd)/arduino-1.0.5"
+  - wget "http://arduino.googlecode.com/files/arduino-1.0.5-linux64.tgz"
+  - tar xzf arduino-1.0.5-linux64.tgz
+  - wget "http://arduino.googlecode.com/files/arduino-1.0.5-linux64.tgz"
+  - tar xzf arduino-1.0.5-linux64.tgz
+  - wget "http://downloads.arduino.cc/arduino-nightly-linux64.tgz"
+  - tar xzf arduino-nightly-linux64.tgz
+script:
+  - scons ARDUINO_BOARD=uno ARDUINO_HOME="$(pwd)/arduino-1.0.5"
+  - scons ARDUINO_BOARD=uno ARDUINO_HOME="$(pwd)/arduino-1.0.5"
+  - scons ARDUINO_BOARD=uno ARDUINO_HOME="$(pwd)/arduino-nightly"
