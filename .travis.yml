@@ -10,6 +10,6 @@ before_script:
   - wget "http://downloads.arduino.cc/arduino-nightly-linux64.tgz"
   - tar xzf arduino-nightly-linux64.tgz
 script:
-  - scons ARDUINO_BOARD=uno ARDUINO_HOME="$(pwd)/arduino-1.0.5"
+  - scons ARDUINO_BOARD=uno ARDUINO_HOME="$(pwd)/arduino-1.0.1"
   - scons ARDUINO_BOARD=uno ARDUINO_HOME="$(pwd)/arduino-1.0.5"
   - scons ARDUINO_BOARD=uno ARDUINO_HOME="$(pwd)/arduino-nightly"
