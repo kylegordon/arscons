@@ -5,10 +5,10 @@ before_script:
   - sudo apt-get install gcc-avr avr-libc libelf-dev pkg-config freeglut3 freeglut3-dev scons
   - wget "http://arduino.googlecode.com/files/arduino-1.0.1-linux64.tgz"
   - tar xzf arduino-1.0.1-linux64.tgz
-  - ls -l
+  - wget "http://arduino.googlecode.com/files/arduino-1.0.2-linux64.tgz"
+  - tar xzf arduino-1.0.2-linux64.tgz
   - wget "http://arduino.googlecode.com/files/arduino-1.0.5-linux64.tgz"
   - tar xzf arduino-1.0.5-linux64.tgz
-  - ls -l
   - wget "http://downloads.arduino.cc/arduino-nightly-linux64.tgz"
   - tar xzf arduino-nightly-linux64.tgz
   - ls -l 
