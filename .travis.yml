@@ -7,12 +7,22 @@ before_script:
   - tar xzf arduino-1.0.1-linux64.tgz
   - wget "http://arduino.googlecode.com/files/arduino-1.0.2-linux64.tgz"
   - tar xzf arduino-1.0.2-linux64.tgz
+  - wget "http://arduino.googlecode.com/files/arduino-1.0.3-linux64.tgz"
+  - tar xzf arduino-1.0.3-linux64.tgz
+  - wget "http://arduino.googlecode.com/files/arduino-1.0.4-linux64.tgz"
+  - tar xzf arduino-1.0.4-linux64.tgz
   - wget "http://arduino.googlecode.com/files/arduino-1.0.5-linux64.tgz"
   - tar xzf arduino-1.0.5-linux64.tgz
+  - wget "http://downloads.arduino.cc/arduino-1.5.5-linux64.tgz"
+  - tar xzf arduino-1.5.5-linux64.tgz
   - wget "http://downloads.arduino.cc/arduino-nightly-linux64.tgz"
   - tar xzf arduino-nightly-linux64.tgz
   - ls -l 
 script:
   - scons ARDUINO_BOARD=uno ARDUINO_HOME="$(pwd)/arduino-1.0.1"
+  - scons ARDUINO_BOARD=uno ARDUINO_HOME="$(pwd)/arduino-1.0.2"
+  - scons ARDUINO_BOARD=uno ARDUINO_HOME="$(pwd)/arduino-1.0.3"
+  - scons ARDUINO_BOARD=uno ARDUINO_HOME="$(pwd)/arduino-1.0.4"
   - scons ARDUINO_BOARD=uno ARDUINO_HOME="$(pwd)/arduino-1.0.5"
-  - scons ARDUINO_BOARD=uno ARDUINO_HOME="$(pwd)/arduino-nightly"
+    #- scons ARDUINO_BOARD=uno ARDUINO_HOME="$(pwd)/arduino-1.5.5"
+    #- scons ARDUINO_BOARD=uno ARDUINO_HOME="$(pwd)/arduino-nightly"
